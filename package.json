@@ -1,0 +1,12 @@
+{
+    "name": "esnext",
+    "version": "1.0.0",
+    "description": "Démonstration de code en ES6 objet",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "CGE",
+    "license": "ISC"
+  }
+  
