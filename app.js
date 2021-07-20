@@ -80,9 +80,19 @@ console.log(othersCities.length);
     //◦ Afficher dans la console :
     //▪ l’objet parisTrip.
     //▪ la propriété name de l’objet parisTrip.
-    console.log(parisTrip);
+    console.log(parisTrip.toString());
     console.log(parisTrip.name);
     // Vérifier le résultat dans la console.
+    //Valoriser à 100 la propriété price de l’objet parisTrip.
+    parisTrip.price = 100;
+    //Afficher dans la console, le résultat de la méthode toString() de l’objet parisTrip.
+    console.log(parisTrip.toString());
+    //Créer une constante defaultTrip qui récupère le résultat de l’exécution de la méthode
+    //getDefaultTrip().
+    const defaultTrip = module1.Trip.getDefaultTrip();
+    //Afficher dans la console defaultTrip.toString().
+    console.log(defaultTrip.toString());
+    
 
 
 
