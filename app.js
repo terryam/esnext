@@ -92,6 +92,19 @@ console.log(othersCities.length);
     const defaultTrip = module1.Trip.getDefaultTrip();
     //Afficher dans la console defaultTrip.toString().
     console.log(defaultTrip.toString());
+    //Créer une constante freeTrip, instance de la classe FreeTrip avec les informations suivantes :
+    //◦ id : nantes
+    //◦ name : Nantes
+    //◦ imageUrl : img/nantes.jpg
+    const freeTrip = new module1.FreeTrip("nantes", "Nantes", "img/nantes.jpg");
+    //Afficher dans la console freeTrip.toString()
+    console.log(freeTrip.toString())
+
+    /**
+     * Heritage
+     */
+     const freeTrip1 = new module1.FreeTrip("nantes", "Nantes", "img/nantes.jpg");
+     console.log(freeTrip1.toString())
     
 
 

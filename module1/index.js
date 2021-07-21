@@ -33,6 +33,25 @@ class Trip { //Créer une classe Trip.
     }
     
 }
+/**
+ * Heritage
+ */
+//Créer la classe FreeTrip qui étends Trip.
+//• Elle se construit avec les informations suivantes : id, name et imageUrl. La propriété price est
+//valorisé par défaut à 0.
+class FreeTrip extends Trip{
+    constructor(id, name, imageUrl) {
+        super(id, name, imageUrl);
+        this._price = 0;
+    }
+    //Redéfinir la méthode toString() dont le résultat est la concaténation de la chaîne de caractères
+    //Free et du résultat de l’exécution de la méthode toString() de la classe Trip.
+    toString(){
+        return "Free" + super.toString();
+    }
 
+}
+
+exports.FreeTrip = FreeTrip;
 
 exports.Trip = Trip;
